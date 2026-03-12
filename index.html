@@ -46,11 +46,17 @@
             background: #1ed760;
             color: #000;
             box-shadow: 0 10px 30px rgba(30, 215, 96, 0.2);
+            transition: all 0.3s ease;
         }
 
         .btn-gold {
             background: linear-gradient(90deg, #d4a373 0%, #8c6239 100%);
             color: #000;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-green:active, .btn-gold:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
@@ -101,7 +107,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-lg">Atmósfera Premium</h3>
-                    <p class="text-neutral-400 text-xs">Expertise en Retail de lujo, terrazas y eventos.</p>
+                    <p class="text-neutral-400 text-xs">Expertise en Retail de lujo y eventos.</p>
                 </div>
             </div>
         </div>
@@ -112,19 +118,24 @@
                 <i class="fa-brands fa-whatsapp text-xl"></i> Consultoría Gratis
             </a>
             
-            <a href="#" 
+            <a href="https://linktr.ee/soy.agusteeen#546246373" 
+               target="_blank"
                class="btn-gold block w-full py-5 text-center font-black rounded-2xl uppercase tracking-widest text-sm flex items-center justify-center gap-3">
                 <i class="fa-solid fa-headphones text-xl"></i> Escuchar mis mixes
             </a>
         </div>
 
         <div class="flex justify-center gap-8 opacity-30 pt-4">
-            <i class="fa-brands fa-instagram text-xl"></i>
+            <a href="https://instagram.com/soy.agusteeen" target="_blank"><i class="fa-brands fa-instagram text-xl text-white"></i></a>
             <i class="fa-brands fa-spotify text-xl"></i>
             <i class="fa-brands fa-soundcloud text-xl"></i>
         </div>
 
     </main>
+
+    <footer class="text-center text-[9px] text-neutral-800 pb-16 uppercase tracking-[0.6em] font-black">
+        Worldwide Sound Curation
+    </footer>
 
 </body>
 </html>
