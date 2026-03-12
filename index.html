@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGUSTÍN — Curaduría Sonora</title>
+    <title>AGUSTEEEN — Identidad Sonora</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -58,6 +58,15 @@
         .btn-green:active, .btn-gold:active {
             transform: scale(0.98);
         }
+
+        .analysis-text {
+            line-height: 1.6;
+            color: #a3a3a3;
+        }
+
+        .glow-icon {
+            filter: drop-shadow(0 0 8px var(--gold));
+        }
     </style>
 </head>
 <body class="animated-gradient min-h-screen">
@@ -65,12 +74,12 @@
     <header class="pt-16 pb-12 px-6 text-center">
         <div class="relative inline-block mb-6">
             <div class="w-24 h-24 rounded-3xl bg-neutral-900 border border-neutral-800 flex items-center justify-center shadow-2xl">
-                <i class="fa-solid fa-compact-disc text-4xl text-[#d4a373]"></i>
+                <i class="fa-solid fa-brain text-4xl text-[#d4a373] glow-icon"></i>
             </div>
             <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-4 border-black"></div>
         </div>
-        <h1 class="font-sync text-2xl font-bold tracking-widest uppercase">AGUSTÍN</h1>
-        <p class="text-[10px] uppercase tracking-[0.5em] text-[#d4a373] mt-3 font-bold opacity-80">Curaduría Sonora</p>
+        <h1 class="font-sync text-2xl font-bold tracking-widest uppercase text-white">AGUSTEEEN</h1>
+        <p class="text-[10px] uppercase tracking-[0.5em] text-[#d4a373] mt-3 font-bold opacity-80">Curaduría & Identidad Sonora</p>
     </header>
 
     <main class="max-w-md mx-auto px-6 space-y-12 pb-24">
@@ -80,53 +89,59 @@
             <p class="text-xs text-neutral-500 italic">Hagamos que tus clientes sientan la diferencia en cada beat.</p>
         </section>
 
-        <div class="space-y-4">
-            <div class="glass-card p-6 flex gap-4 items-center">
-                <div class="bg-[#d4a373]/10 p-4 rounded-2xl">
-                    <i class="fa-solid fa-chart-line text-[#d4a373] text-xl"></i>
+        <!-- SECCIÓN DE ANÁLISIS DETALLADO -->
+        <section class="glass-card p-8 border-l-4 border-l-[#d4a373]">
+            <h3 class="font-sync text-xs tracking-widest text-[#d4a373] mb-4 uppercase">Análisis Estratégico</h3>
+            <p class="text-sm font-bold mb-4">"He preparado un análisis detallado sobre mi proceso de curaduría y cómo el sonido puede aumentar hasta un 30% el valor de tu negocio."</p>
+            
+            <div class="analysis-text text-xs space-y-4">
+                <p>Mi enfoque no es simplemente "poner música". Es **arquitectura sonora**. El sonido correcto altera la percepción del tiempo, reduce el estrés del comprador y refuerza la identidad premium de un espacio.</p>
+                
+                <div class="grid grid-cols-2 gap-4 py-2">
+                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-center">
+                        <span class="text-[#d4a373] font-bold block text-lg">+30%</span>
+                        <span class="text-[9px] uppercase tracking-tighter">Valor percibido</span>
+                    </div>
+                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-center">
+                        <span class="text-[#d4a373] font-bold block text-lg">Psique</span>
+                        <span class="text-[9px] uppercase tracking-tighter">Impacto sensorial</span>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="font-bold text-lg">Ventas +30%</h3>
-                    <p class="text-neutral-400 text-xs">La música estratégica aumenta el valor percibido.</p>
-                </div>
-            </div>
 
-            <div class="glass-card p-6 flex gap-4 items-center">
-                <div class="bg-indigo-500/10 p-4 rounded-2xl">
-                    <i class="fa-solid fa-wand-magic-sparkles text-indigo-400 text-xl"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg">Curaduría Humana</h3>
-                    <p class="text-neutral-400 text-xs">Identidad sonora diseñada para tu público y clima.</p>
-                </div>
+                <p>A través de una selección basada en el *BPM estratégico* y la psicología auditiva, transformamos locales en experiencias que invitan a volver.</p>
             </div>
+        </section>
 
-            <div class="glass-card p-6 flex gap-4 items-center">
-                <div class="bg-yellow-500/10 p-4 rounded-2xl">
-                    <i class="fa-solid fa-martini-glass-citrus text-yellow-500 text-xl"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg">Atmósfera Premium</h3>
-                    <p class="text-neutral-400 text-xs">Expertise en Retail de lujo y eventos.</p>
-                </div>
-            </div>
-        </div>
-
+        <!-- BOTONES DE ACCIÓN PRINCIPALES -->
         <div class="space-y-4 pt-4">
-            <a href="https://wa.me/59898588576" 
-               class="btn-green block w-full py-5 text-center font-black rounded-2xl uppercase tracking-widest text-sm flex items-center justify-center gap-3">
+            <!-- BOTÓN WHATSAPP CORREGIDO -->
+            <a href="https://api.whatsapp.com/send?phone=59898588576&text=Hola%20Agusteeen!%20Me%20interesa%20una%20consultoría%20para%20mi%20marca." 
+               target="_blank"
+               class="btn-green block w-full py-5 text-center font-black rounded-2xl uppercase tracking-widest text-sm flex items-center justify-center gap-3 transform transition hover:scale-[1.02]">
                 <i class="fa-brands fa-whatsapp text-xl"></i> Consultoría Gratis
             </a>
             
+            <!-- BOTÓN LINKTREE / MIXES -->
             <a href="https://linktr.ee/soy.agusteeen#546246373" 
                target="_blank"
-               class="btn-gold block w-full py-5 text-center font-black rounded-2xl uppercase tracking-widest text-sm flex items-center justify-center gap-3">
+               class="btn-gold block w-full py-5 text-center font-black rounded-2xl uppercase tracking-widest text-sm flex items-center justify-center gap-3 transform transition hover:scale-[1.02]">
                 <i class="fa-solid fa-headphones text-xl"></i> Escuchar mis mixes
             </a>
         </div>
 
+        <!-- REPRODUCTOR SPOTIFY -->
+        <div class="space-y-4">
+            <h3 class="font-sync text-[10px] tracking-[0.3em] text-center text-neutral-600 uppercase">Spotlight: Rotunda</h3>
+            <div class="rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/5">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4PrQYxD2jEUpwKkLDuC3HO?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- REDES -->
         <div class="flex justify-center gap-8 opacity-30 pt-4">
-            <a href="https://instagram.com/soy.agusteeen" target="_blank"><i class="fa-brands fa-instagram text-xl text-white"></i></a>
+            <a href="https://instagram.com/soy.agusteeen" target="_blank" class="hover:opacity-100 transition-opacity">
+                <i class="fa-brands fa-instagram text-xl text-white"></i>
+            </a>
             <i class="fa-brands fa-spotify text-xl"></i>
             <i class="fa-brands fa-soundcloud text-xl"></i>
         </div>
@@ -134,7 +149,7 @@
     </main>
 
     <footer class="text-center text-[9px] text-neutral-800 pb-16 uppercase tracking-[0.6em] font-black">
-        Worldwide Sound Curation
+        Montevideo / International
     </footer>
 
 </body>
