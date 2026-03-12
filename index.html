@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGUSTÍN — Curaduría Sonora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;700&display=swap');
+        
+        :root {
+            --gold: #d4a373;
+            --dark-bg: #0a0a0a;
+        }
 
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .font-sync { font-family: 'Syncopate', sans-serif; }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #0a0a0a, #1a1410, #2c241e, #0f0f0f);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+
+        .btn-green {
+            background: #1ed760;
+            color: #000;
+            box-shadow: 0 10px 30px rgba(30, 215, 96, 0.2);
+        }
+
+        .btn-gold {
+            background: linear-gradient(90deg, #d4a373 0%, #8c6239 100%);
+            color: #000;
+        }
+    </style>
+</head>
+<body class="animated-gradient min-h-screen">
+
+    <header class="pt-16 pb-12 px-6 text-center">
+        <div class="relative inline-block mb-6">
+            <div class="w-24 h-24 rounded-3xl bg-neutral-900 border border-neutral-800 flex items-center justify-center shadow-2xl">
+                <i class="fa-solid fa-compact-disc text-4xl text-[#d4a373]"></i>
+            </div>
+            <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-4 border-black"></div>
+        </div>
+        <h1 class="font-sync text-2xl font-bold tracking-widest uppercase">AGUSTÍN</h1>
+        <p class="text-[10px] uppercase tracking-[0.5em] text-[#d4a373] mt-3 font-bold opacity-80">Curaduría Sonora</p>
+    </header>
+
+    <main class="max-w-md mx-auto px-6 space-y-12 pb-24">
+
+        <section class="text-center space-y-2">
+            <h2 class="text-2xl font-bold">Tu marca tiene <br><span class="text-[#d4a373]">vuelo propio.</span></h2>
+            <p class="text-xs text-neutral-500 italic">Hagamos que tus clientes sientan la diferencia en cada beat.</p>
+        </section>
+
+        <div class="space-y-4">
+            <div class="glass-card p-6 flex gap-4 items-center">
+                <div class="bg-[#d4a373]/10 p-4 rounded-2xl">
+                    <i class="fa-solid fa-chart-line text-[#d4a373] text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Ventas +30%</h3>
+                    <p class="text-neutral-400 text-xs">La música estratégica aumenta el valor percibido.</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 flex gap-4 items-center">
+                <div class="bg-indigo-500/10 p-4 rounded-2xl">
+                    <i class="fa-solid fa-wand-magic-sparkles text-indigo-400 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Curaduría Humana</h3>
+                    <p class="text-neutral-400 text-xs">Identidad sonora diseñada para tu público y clima.</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 flex gap-4 items-center">
+                <div class="bg-yellow-500/10 p-4 rounded-2xl">
+                    <i class="fa-solid fa-martini-glass-citrus text-yellow-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Atmósfera Premium</h3>
+                    <p class="text-neutral-400 text-xs">Expertise en Retail de lujo, terrazas y eventos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-4 pt-4">
+            <a href="https://wa.me/59898588576" 
+               class="btn-green block w-full py-5 text-center font-black rounded-2xl uppercase tracking-widest text-sm flex items-center justify-center gap-3">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Consultoría Gratis
+            </a>
+            
+            <a href="#" 
+               class="btn-gold block w-full py-5 text-center font-black rounded-2xl uppercase tracking-widest text-sm flex items-center justify-center gap-3">
+                <i class="fa-solid fa-headphones text-xl"></i> Escuchar mis mixes
+            </a>
+        </div>
+
+        <div class="flex justify-center gap-8 opacity-30 pt-4">
+            <i class="fa-brands fa-instagram text-xl"></i>
+            <i class="fa-brands fa-spotify text-xl"></i>
+            <i class="fa-brands fa-soundcloud text-xl"></i>
+        </div>
+
+    </main>
+
+</body>
+</html>
